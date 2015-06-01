@@ -1,0 +1,21 @@
+{
+  "name": "webt-js-framework",
+  "version": "0.1.0",
+  "description": "Very light, based on jQuery javascript framework for web-applications. Consists of several components, so you can determine, what you need to include into your project.",
+  "main": [
+    "./webtframework.js"
+  ],
+  "ignore": [
+    "**/.*"
+  ],
+  "dependencies": {
+    "jquery": ">=1.8"
+  },
+  "keywords": [
+    "webt", "web-t", "javascript", "js", "framework"
+  ],
+  "author": {
+    "name": "Sergey Tretyak",
+    "web": "http://web-t.com.ua/"
+  }
+}
