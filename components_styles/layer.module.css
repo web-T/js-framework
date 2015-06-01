@@ -1,0 +1,63 @@
+/**
+ * Layer Module CSS for webT::Framework
+ */
+.webt-layer-cont {
+    display: block !important;
+    position: absolute !important;
+    left: 0 !important;
+    right: 0 !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    z-index: 9999 !important;
+    min-height: 50px !important;
+    padding: 0  !important;
+    margin: 0  !important;
+    background: none  !important;
+}
+
+    .webt-layer-cont .webt-layer-bg{
+        display: block !important;
+        position: fixed !important;
+        left: 0 !important;
+        right: 0 !important;
+        top: 0 !important;
+        bottom: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+        padding: 0 !important;
+        z-index: 1 !important;
+        background: #fff !important;
+        opacity: 0.7 !important;
+        filter: alpha(opacity=70) !important;
+    }
+
+    .webt-layer-cont .webt-layer{
+        position: absolute !important;
+        z-index: 2 !important;
+        left: 50% !important;
+        /*top: 50% !important;*/
+        padding: 0 !important;
+        /*background: #fff;*/
+        box-shadow: 0px 0px 14px #ddd;
+    }
+
+    .webt-layer-cont .webt-layer-inner {
+        overflow: auto;
+    }
+
+    .webt-layer-cont .webt-layer-close {
+        display: block;
+        z-index: 10;
+        position: absolute;
+        right: 10px;
+        top: 5px;
+        cursor: pointer;
+    }
+
+        .webt-layer-cont .webt-layer-close:before {
+            content: "X";
+            font-family: 'Arial';
+            font-size: 40px;
+        }
