@@ -111,6 +111,9 @@ webtFramework.inject({
         // check for special jquery styles
         if (wi && typeof wi == 'object'){
             $('#webtLayer'+id+' .webt-layer').css(wi);
+            if (typeof wi.classname != 'undefined' && wi.classname){
+                $('#webtLayer'+id+' .webt-layer').addClass(wi.classname);
+            }
         }
 
         if (typeof source.jquery != 'undefined'){
