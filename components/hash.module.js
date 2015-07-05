@@ -61,6 +61,14 @@ webtFramework.inject({hash : {
     },
 
     /**
+     * remove event from dispatching
+     * @param evt
+     */
+    removeEvent: function(evt){
+        webtFramework.hash._events[evt] = null;
+    },
+
+    /**
      * method parse location hash and prepare key => value pairs
      * @return {Object}
      */
@@ -133,7 +141,7 @@ webtFramework.inject({hash : {
                 }
 
             }
-        }
+        };
 
         webtFramework.hash._dispatcher = setInterval(function(){checkHash();}, 500);
     }
