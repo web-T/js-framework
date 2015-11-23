@@ -1,6 +1,26 @@
 webtFramework = {
 
     /**
+     * method syncronizes app events
+     * @param k
+     * @param condition
+     */
+    sync : function(k, condition){
+
+        (function(){
+            try{
+                if (eval(condition) == true) {
+                    k();
+                } else {
+                    setTimeout(arguments.callee,10);
+                }
+            } catch(e) {
+                setTimeout(arguments.callee,10);
+            }}
+            )();
+    },
+
+    /**
      * simple inject function
      * @param module
      */
