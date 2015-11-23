@@ -7,17 +7,19 @@ webtFramework = {
      */
     sync : function(k, condition){
 
-        (function(){
-            try{
-                if (eval(condition) == true) {
+        try{
+            if (eval(condition) == true) {
+                try{
                     k();
-                } else {
-                    setTimeout(arguments.callee,10);
+                } catch(e) {
+                    console.log(e);
                 }
-            } catch(e) {
+            } else {
                 setTimeout(arguments.callee,10);
-            }}
-            )();
+            }
+        } catch(e) {
+            setTimeout(arguments.callee,10);
+        }
     },
 
     /**
