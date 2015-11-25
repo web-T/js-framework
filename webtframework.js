@@ -7,19 +7,25 @@ webtFramework = {
      */
     sync : function(k, condition){
 
-        try{
-            if (eval(condition) == true) {
-                try{
-                    k();
-                } catch(e) {
-                    console.log(e);
+        (function(z, cond){
+
+            var self = arguments.callee;
+            var args = arguments;
+            try{
+                if (eval(cond) == true) {
+                    try{
+                        z();
+                    } catch(e) {
+                        console.log(e);
+                    }
+                } else {
+                    setTimeout(function(){self.apply(null,args)},500);
+
                 }
-            } else {
-                setTimeout(arguments.callee,10);
+            } catch(e) {
+                setTimeout(function(){self.apply(null,args)},500);
             }
-        } catch(e) {
-            setTimeout(arguments.callee,10);
-        }
+        })(k, condition);
     },
 
     /**
