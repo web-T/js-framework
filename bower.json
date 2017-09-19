@@ -1,7 +1,7 @@
 {
   "name": "webt-js-framework",
   "version": "0.1.6",
-  "description": "Very light, based on jQuery javascript framework for web-applications. Consists of several components, so you can determine, what you need to include into your project.",
+  "description": "Very light, based on jQuery javascript framework for web-applications.",
   "main": [
     "./webtframework.js"
   ],
