@@ -1,0 +1,24 @@
+{
+  "name": "webt-js-framework",
+  "version": "0.1.6",
+  "description": "Very light, based on jQuery javascript framework for web-applications.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/web-T/js-framework.git"
+  },
+  "keywords": [
+    "site",
+    "components",
+    "framework"
+  ],
+  "author": "Sergey Tretyak",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/web-T/js-framework/issues"
+  },
+  "homepage": "https://github.com/web-T/js-framework#readme"
+}
